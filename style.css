@@ -34,23 +34,109 @@
         transition: opacity 2s ease-in-out;
 }
 
+
+
+
+
+
+
+
+
+.wrapper{
+        overflow: hidden;
+}
+
+
 .ImageGrid{
         margin-top: 2rem;
         display: flex;
-        flex-wrap: wrap;
-}
-.imgWrapper{
-        height: 100%;
-        overflow: hidden;
+        position: relative;
         height: 30rem;
+        width: 100%;
 }
-img{
-        height: 100%;
+.img{
+        width: 100%;
+        border: 1px solid saddlebrown;
+}
+.ImageGrid .span{
+        height: 115%;
 }
 
+button{
+        display: none;
+}
 .animateOutlineHeading{
         opacity: 1;
 }
+
+.desktop{
+        display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media(min-width: 37rem){
         .heading{
@@ -61,20 +147,32 @@ img{
                 -webkit-text-stroke: 5px #fff;
         }
         .ImageGrid{
+                transform: unset;
                 height: calc(100vh - 17rem);    
         }
-        .ImageGrid .imgWrapper{
+        .ImageGrid .img{
                 height: 100%;
                 width: 33%;
                 opacity: 0;
+                position: static;
                 animation: spaceInDown 1s forwards;
                 border: 5px solid #000;
         }
-
+        img{
+                height: 100%;
+        }
         .ImageGrid .two{
                 animation: spaceInDown 1s 0.2s forwards ;
         }
-
+        #firstClone, #lastClone{
+                display: none;
+        }
+        .mobile{
+                display: none;
+        }
+        .desktop{
+                display: block;
+        }
         
         /* @-webkit-keyframes spaceInDown {
                 0% {
