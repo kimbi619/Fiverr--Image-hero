@@ -56,7 +56,7 @@
 }
 .img{
         width: 100%;
-        border: 1px solid saddlebrown;
+        /* border: 1px solid saddlebrown; */
 }
 .ImageGrid .span{
         height: 115%;
@@ -163,6 +163,9 @@ button{
         }
         .ImageGrid .two{
                 animation: spaceInDown 1s 0.2s forwards ;
+        }
+        .ImageGrid .three{
+                animation: spaceInDown 1s 0.1s forwards ;
         }
         #firstClone, #lastClone{
                 display: none;

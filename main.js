@@ -67,7 +67,6 @@ slide.style.transform = `translateX(-${size * counter}px)`
 
 
 const loopForward = () =>{
-    console.log(counter);
     if(counter >= images.length - 1) return
     slide.style.transition = "transform 0.4s ease-in-out"
     counter++
@@ -78,7 +77,7 @@ next.addEventListener('click', loopForward)
 
 prevBtn.addEventListener('click',loopForward)
 
-// setInterval(loopForward, 2500);
+setInterval(loopForward, 2500);
 
 
 
