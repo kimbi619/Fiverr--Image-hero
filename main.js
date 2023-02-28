@@ -1,11 +1,17 @@
 
 const typeWriter = document.querySelector('#typeWriter')
 const outline = document.querySelector('#outline')
+const mobileBtn = document.querySelector('.burgerMenu')
+const mobileNav = document.querySelector('.nav')
 
 window.addEventListener('load', () => {
         setTimeout(() => {
                 outline.classList.add('animateOutlineHeading')
         }, 500);
+})
+
+mobileBtn.addEventListener('click', () => {
+    mobileNav.classList.toggle('showNav')
 })
 
 
