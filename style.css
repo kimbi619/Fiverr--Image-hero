@@ -7,7 +7,9 @@
   font-family: nav;
   src: url('./assets-metropolis/assets-metropolis/fonts/kanit-semibold.woff');
 }
-
+body{
+        background-color: #000;
+}
 * {
         margin: 0;
         padding: 0;
